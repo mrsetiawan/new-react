@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components'
 
 const TalentProfile = () => {
   return (
@@ -7,7 +8,6 @@ const TalentProfile = () => {
 }
 
 const TalentName = ({ name, job }) => {
-  console.log(job)
   return (
     <>
       <p>{name}</p>
@@ -22,11 +22,21 @@ const TalentInfo = ({ title }) => {
   )
 }
 
-const ButtonInfo = ({ children }) => {
-  return (
-    <button>{children}</button>
-  )
-}
+// const ButtonInfo = ({ children }) => {
+//   return (
+//     <button className="btn">{children}</button>
+//   )
+// }
+
+const ButtonInfo = styled.button `
+  float: left;
+  margin: 0 5px;
+  text-align: center;
+  padding: 4px;
+  background: rgba(255, 165, 0, 0.55);
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #fb9595;`;
 
 const ProfileSection = () => {
   return (

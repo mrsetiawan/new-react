@@ -8,8 +8,8 @@ const App = () => {
       {MainRouter.map((route, index) => {
         return (
           <Fragment key={index}>
-            {/* <Route exact key={index} path={route.path} component={route.component} /> */}
-            <Route exact {...route} />
+            <Route exact key={index} path={route.path} component={route.component} />
+            {/* <Route exact {...route} /> */}
           </Fragment>
         )
       })}
